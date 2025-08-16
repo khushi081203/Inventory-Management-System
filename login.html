@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: radial-gradient(circle,rgb(164, 59, 164),rgb(47, 18, 43),rgb(5, 5, 5));
+            color: #fff;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background:rgba(29, 12, 30, 0.686);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            color: #fdf2f2;
+        }
+        label {
+            margin: 10px 0 5px;
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+        input {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #5f3063;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #f98cf2;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #ffffff;
+        }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form action="/login" method="POST">
+        <h1>Login</h1>
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="Enter your password" required>
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="/register">Register</a></p>
+    </form>
+</body>
+</html>

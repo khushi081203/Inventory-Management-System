@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Smart Store Management</title>
+    <link rel="stylesheet" href="/static/homestyle.css"> <!-- Linking to external CSS -->
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Smart Store Management</h1>
+            <nav>
+                <ul>
+                    <li><a href="/inventory">Inventory</a></li>
+                    <li><a href="/sales">Sales</a></li>
+                    <li><a href="{{ url_for('sell') }}">Sell Products</a>
+                    </li>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/report">Report</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="intro">
+            <p>
+                Welcome to the Smart Store Management system! Our platform allows businesses to streamline their inventory, sales, and reporting processes effortlessly. With an intuitive interface and easy-to-use features, you can manage your store more efficiently than ever before.
+            </p>
+        </section>
+
+        
+        
+
+        <section class="developers">
+            <h2>Meet Our Developers</h2>
+            <div class="developer">
+                <img src="/static/kbmini.jpg" alt="Developer 1">
+                <h3>KHUSHI BHUTE</h3>
+                <p>Email: khushibhute12@gmail.com</p>
+            </div>
+            <div class="developer">
+                <img src="/static/kdmini.jpg" alt="Developer 2">
+                <h3>KALASHRI DAIVADNYA</h3>
+                <p>Email: kalashridaivadnya10@gmail.com</p>
+            </div>
+            <div class="developer">
+                <img src="/static/yashmini.jpg" alt="Developer 3">
+                <h3>YASH HAVALANNACHE</h3>
+                <p>Email: yashhavalanache@gmail.com</p>
+            </div>
+            <div class="developer">
+                <img src="/static/shreemini.jpg" alt="Developer 4">
+                <h3>SHREERANG DESHPANDE</h3>
+                <p>Email: shreerangd18@gmail.com</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
